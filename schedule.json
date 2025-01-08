@@ -1,0 +1,44 @@
+[
+        {
+            "Period" : "1",
+            "Class" : "Spanish",
+            "Teacher" : "Profe",
+            "Where" : "E215"
+        },
+        {
+            "Period" : "2",
+            "Class" : "Gym",
+            "Teacher" : "Hastings",
+            "Where" : "Gym"
+        },
+        {
+            "Period" : "3",
+            "Class" : "Web Design",
+            "Teacher" : "Herbert",
+            "Where" : "B114"
+        },
+        {
+            "Period" : "4",
+            "Class" : "Financial Lit.",
+            "Teacher" : "Smith",
+            "Where" : "D107"
+        },
+        {
+            "Period" : "5",
+            "Class" : "English",
+            "Teacher" : "Danza",
+            "Where" : "E101"
+        },
+        {
+            "Period" : "6",
+            "Class" : "PreClac",
+            "Teacher" : "Thwaits",
+            "Where" : "D205"
+        },
+        {
+            "Period" : "7",
+            "Class" : "Band",
+            "Teacher" : "Gattsek",
+            "Where" : "A105"
+        }
+]

@@ -1,4 +1,13 @@
 $(document).ready(() => {
+
+    $.ajax({
+        url: 'schedule.json',
+        method: 'GET',
+        success: function (data) {
+            
+        }
+    })
+
     const class1 = "Spanish";
     const class2 = "Gym";
     const class3 = "Web Design";
@@ -33,12 +42,25 @@ $(document).ready(() => {
         var hours = date.getHours();
         var min = date.getMinutes();
 
-        if(hours == 8 && min == 21) {
-            $('#per1').addClass('per-active')
-            $('#per1').siblings().removeClass('per-active')
-        } else if(hours == 9 && min == 21) {
+        if(hours >= 15 && min >= 0) {
+            $('#per6').removeClass('per-active')
+        } else if(hours >= 13 && min >= 52) {
+            $('#per6').addClass('per-active')
+            $('#per5').removeClass('per-active')
+        } else if(hours >= 12 && min >= 40) {
+            $('#per5').addClass('per-active')
+            $('#per4').removeClass('per-active')
+        } else if(hours >= 12 && min >= 0) {
+            $('#per4').addClass('per-active')
+            $('#per3').removeClass('per-active')
+        } else if(hours >= 10 && min >= 47) {
+            $('#per3').addClass('per-active')
+            $('#per2').removeClass('per-active')
+        } else if(hours >= 9 && min >= 36) {
             $('#per2').addClass('per-active')
-            $('#per2').siblings().removeClass('per-active')
+            $('#per1').removeClass('per-active')
+        } else if(hour >= 8 && min >= 21) {
+            $('per1').addClass('per-active')
         }
     }
 
@@ -58,7 +80,7 @@ $(document).ready(() => {
 
     $('#ADay').on('click', () => {
         block1.html('1');
-        period1.html(class1)
+        period1.html(class1);
         teacher1.html('Profe');
         room1.html('E215');
         //
@@ -72,16 +94,17 @@ $(document).ready(() => {
         teacher3.html('Herbert');
         room3.html('B114');
         //
-        block4.html('5');
-        period4.html(class5);
-        teacher4.html('Danza');
-        room4.html('E101');
+        block4.html('7');
+        period4.html(class7);
+        teacher4.html('Gattsek');
+        room4.html('A105');
         //
-        block5.html('6');
-        period5.html(class6);
-        teacher5.html('Thwaits');
-        room5.html('D205');
+        block5.html('5');
+        period5.html(class5);
+        teacher5.html('Danza');
+        room5.html('E101');
     })
+
 
     $('#BDay').on('click', () => {
         block1.html('4');
